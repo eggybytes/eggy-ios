@@ -1,0 +1,20 @@
+name: eggy-ios
+options:
+  createIntermediateGroups: true
+  defaultConfig: Debug
+  groupSortPosition: none
+  bundleIdPrefix: "com.eggybytes"
+targets:
+  eggy-ios:
+    type: framework
+    platform: iOS
+    deploymentTarget: "13.0"
+    sources:
+      - eggy-ios/Classes
+schemes:
+  eggy-ios:
+    build:
+      parallelizeBuild: false
+      buildImplicitDependencies: false
+      targets:
+        eggy-ios: eggy-ios
